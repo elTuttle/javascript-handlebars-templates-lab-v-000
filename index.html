@@ -24,9 +24,11 @@
     <script id="recipe-template" type="text/x-handlebars-template">
       <header><h2>{{name}}</h2></header>
       <p>{{description}}</p>
-      {{#each ingredients}}
-        <h3>{{name}}<h3>
-      {{/each}}
+      <ul>
+        {{#each ingredients}}
+        <li>{{name}}</li>
+        {{/each}}
+      </ul>
     </script>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
