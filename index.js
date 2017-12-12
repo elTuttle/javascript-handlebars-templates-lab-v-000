@@ -7,13 +7,12 @@ function createRecipe() {
   var ingredientHash = {};
 
   ingredients.forEach( function(element){
-    console.log(element)
+    debugger;
   })
 
   var recipe = {
     name: name,
-    description: description,
-    ingredients: ingredients
+    description: description
   }
 
   var recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
