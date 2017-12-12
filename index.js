@@ -4,6 +4,8 @@ function createRecipe() {
 
   var ingredients = document.getElementsByName("ingredients").elements;
 
+  
+
   var recipe = {
     name: name,
     description: description,
