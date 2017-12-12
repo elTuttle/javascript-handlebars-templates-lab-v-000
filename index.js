@@ -4,6 +4,12 @@ function createRecipe() {
 
   var ingredients = document.getElementsByName("ingredients").elements;
 
+  var ingredientHash = {};
+
+  ingredients.forEach( function(element){
+    console.log(element)
+  })
+
   var recipe = {
     name: name,
     description: description,
