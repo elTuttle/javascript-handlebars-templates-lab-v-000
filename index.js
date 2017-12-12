@@ -4,15 +4,10 @@ function createRecipe() {
 
   var ingredients = document.getElementsByName("ingredients").elements;
 
-  var ingredientHash = {};
-
-  ingredients.forEach( function(element){
-    debugger;
-  })
-
   var recipe = {
     name: name,
-    description: description
+    description: description,
+    ingredients: ingredients
   }
 
   var recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
