@@ -4,8 +4,6 @@ function createRecipe() {
 
   var ingredients = document.getElementsByName("ingredients").elements.value;
 
-  var ingredientHash = {};
-
   var recipe = {
     name: name,
     description: description,
