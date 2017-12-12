@@ -4,9 +4,6 @@ function createRecipe() {
 
   var ingredients = document.getElementsByName("ingredients")
 
-  var recipeFormTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
-  var rfTemplate = recipeFormTemplate();
-
   var recipe = {
     name: name,
     description: description,
@@ -17,7 +14,6 @@ function createRecipe() {
   var rTemplate = recipeTemplate(recipe);
 
   document.getElementById("main").innerHTML += rTemplate;
-  document.getElementById("main").innerHTML += rfTemplate;
 }
 
 function init() {
